@@ -1,17 +1,19 @@
-
+/*System-Prgramming : Assignment 2
+ *Authors: Yulia Moshan 319565610
+ *			Gil Pasi    206500936 */
 public  abstract class Wehicle {
-	public enum  Status{UNKOWN,PENDING,IN_WASH,DONE;} 
 	
-	int id;
-	static long startTime = System.currentTimeMillis();
-	static int nextId = 1;//This helps to calculate the next id in such a way 						  // that each id is unique
-	Status vehicleStatus;
+	private int id;
+	private static long startTime = System.currentTimeMillis();
+	private static int nextId = 1;//This helps to calculate the next id in such a way 						  // that each id is unique
+	private Status vehicleStatus;
 	
 	//Constructor
 	public Wehicle () {
 		id = nextId ++ ;//Define a new id + increase the
 						//next id (in order to avoid duplications)
 		vehicleStatus = Status.UNKOWN;//Status is yet to be determined
+
 		
 		
 	}
@@ -39,6 +41,9 @@ public  abstract class Wehicle {
 		return out;
 		
 	}
+	
+	public int getId() {return id;}
+	public Status getVehicleStatus() {return vehicleStatus; }
 	
 
 }
