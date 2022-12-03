@@ -9,13 +9,18 @@ public class WehicleWasher {
 	//All empty by default
 	private ArrayDeque<Wehicle> preWash = new ArrayDeque<Wehicle>();
 	private ArrayList<Wehicle> inWash = new ArrayList<Wehicle>();
-	private ArrayList<Wehicle> postWash = new ArrayList<Wehicle>();
+	
+	private ArrayList<Wehicle> washedCars = new ArrayList<Wehicle>();
+	private ArrayList<Wehicle> washedTrucks = new ArrayList<Wehicle>();
+	private ArrayList<Wehicle> washedSUVs = new ArrayList<Wehicle>();
+	private ArrayList<Wehicle> washedMiniBuses = new ArrayList<Wehicle>();
+
 	
 	
 	private double arrivalPeriod;
 	private double washPeriod;
 	private int washingPositions;
-	public int leftVehicles;
+	private int leftVehicles;
 	
 	public WehicleWasher(double arrivalPeriod, double washPeriod
 							,int washingPositions,int leftVehicles) {
@@ -133,12 +138,30 @@ public class WehicleWasher {
 	}
 	
 	
-	public void  endWash(int index ) {
+	public void  endWash(int index ) throws Exception  {
 		/**This method moves the given vehicle to the washed cars list*/
-		postWash.add(inWash.remove(index));
+		
+		Wehicle wehicle = inWash.remove(index);
+		
+		if(wehicle instanceof Car)
+			washedCars.add(inWash.remove(index));
+		
+		if(wehicle instanceof Truck)
+			washedTrucks.add(inWash.remove(index));
+		
+		if(wehicle instanceof SUV)
+			washedSUVs.add(inWash.remove(index));
+		
+		if(wehicle instanceof MiniBus)
+			washedMiniBuses.add(inWash.remove(index));
+		else throw new Exception ("Invalid vehicle instance");
+
+			
+		
 	}
 	
 	
 	public double getWashPeriod() {return washPeriod;}
+	public int getLeftVehicles() {return leftVehicles;}
 	
 }
