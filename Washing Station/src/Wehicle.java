@@ -2,6 +2,7 @@
  *Authors: Yulia Moshan 319565610
  *			Gil Pasi    206500936 */
 public  abstract class Wehicle {
+	//Test
 	
 	private int id;
 	private static long startTime = System.currentTimeMillis();

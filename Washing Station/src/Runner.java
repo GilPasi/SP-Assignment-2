@@ -3,9 +3,7 @@ public class Runner {
 
 	public static void main(String[] args) {
 
-		WehicleLogger wl = new WehicleLogger();
-		wl.log("bbb");
-
+			wellow
 	}
 
 }
