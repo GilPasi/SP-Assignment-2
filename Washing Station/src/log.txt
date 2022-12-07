@@ -1,0 +1,1200 @@
+Time since the beginning : 0.003 seconds
+Status changed to PENDING
+Vehicle ID : 1 Type: SUV
+
+Time since the beginning : 0.003 seconds
+Status changed to IN_WASH
+Vehicle ID : 1 Type: SUV
+
+Time since the beginning : 0.003 seconds
+Status changed to DONE
+Vehicle ID : 1 Type: SUV
+
+Time since the beginning : 0.007 seconds
+Status changed to PENDING
+Vehicle ID : 3 Type: MiniBus
+
+Time since the beginning : 0.007 seconds
+Status changed to PENDING
+Vehicle ID : 4 Type: SUV
+
+Time since the beginning : 0.007 seconds
+Status changed to PENDING
+Vehicle ID : 2 Type: Truck
+
+Time since the beginning : 0.007 seconds
+Status changed to IN_WASH
+Vehicle ID : 3 Type: MiniBus
+
+Time since the beginning : 0.007 seconds
+Status changed to DONE
+Vehicle ID : 3 Type: MiniBus
+
+Time since the beginning : 0.007 seconds
+Status changed to IN_WASH
+Vehicle ID : 4 Type: SUV
+
+Time since the beginning : 0.007 seconds
+Status changed to DONE
+Vehicle ID : 4 Type: SUV
+
+Time since the beginning : 0.007 seconds
+Status changed to IN_WASH
+Vehicle ID : 2 Type: Truck
+
+Time since the beginning : 0.007 seconds
+Status changed to DONE
+Vehicle ID : 2 Type: Truck
+
+Time since the beginning : 0.011 seconds
+Status changed to PENDING
+Vehicle ID : 6 Type: Truck
+
+Time since the beginning : 0.011 seconds
+Status changed to PENDING
+Vehicle ID : 5 Type: Car
+
+Time since the beginning : 0.011 seconds
+Status changed to IN_WASH
+Vehicle ID : 6 Type: Truck
+
+Time since the beginning : 0.011 seconds
+Status changed to IN_WASH
+Vehicle ID : 5 Type: Car
+
+Time since the beginning : 0.011 seconds
+Status changed to DONE
+Vehicle ID : 5 Type: Car
+
+Time since the beginning : 0.011 seconds
+Status changed to DONE
+Vehicle ID : 6 Type: Truck
+
+Time since the beginning : 0.013 seconds
+Status changed to PENDING
+Vehicle ID : 7 Type: Car
+
+Time since the beginning : 0.013 seconds
+Status changed to IN_WASH
+Vehicle ID : 7 Type: Car
+
+Time since the beginning : 0.013 seconds
+Status changed to DONE
+Vehicle ID : 7 Type: Car
+
+Time since the beginning : 0.015 seconds
+Status changed to PENDING
+Vehicle ID : 8 Type: Car
+
+Time since the beginning : 0.015 seconds
+Status changed to PENDING
+Vehicle ID : 10 Type: MiniBus
+
+Time since the beginning : 0.015 seconds
+Status changed to PENDING
+Vehicle ID : 9 Type: SUV
+
+Time since the beginning : 0.015 seconds
+Status changed to PENDING
+Vehicle ID : 11 Type: Car
+
+Time since the beginning : 0.015 seconds
+Status changed to IN_WASH
+Vehicle ID : 8 Type: Car
+
+Time since the beginning : 0.016 seconds
+Status changed to DONE
+Vehicle ID : 8 Type: Car
+
+Time since the beginning : 0.016 seconds
+Status changed to IN_WASH
+Vehicle ID : 10 Type: MiniBus
+
+Time since the beginning : 0.016 seconds
+Status changed to DONE
+Vehicle ID : 10 Type: MiniBus
+
+Time since the beginning : 0.016 seconds
+Status changed to IN_WASH
+Vehicle ID : 9 Type: SUV
+
+Time since the beginning : 0.016 seconds
+Status changed to DONE
+Vehicle ID : 9 Type: SUV
+
+Time since the beginning : 0.016 seconds
+Status changed to IN_WASH
+Vehicle ID : 11 Type: Car
+
+Time since the beginning : 0.016 seconds
+Status changed to DONE
+Vehicle ID : 11 Type: Car
+
+Time since the beginning : 0.018 seconds
+Status changed to PENDING
+Vehicle ID : 12 Type: Car
+
+Time since the beginning : 0.018 seconds
+Status changed to PENDING
+Vehicle ID : 14 Type: SUV
+
+Time since the beginning : 0.018 seconds
+Status changed to IN_WASH
+Vehicle ID : 12 Type: Car
+
+Time since the beginning : 0.018 seconds
+Status changed to DONE
+Vehicle ID : 12 Type: Car
+
+Time since the beginning : 0.018 seconds
+Status changed to PENDING
+Vehicle ID : 13 Type: MiniBus
+
+Time since the beginning : 0.018 seconds
+Status changed to PENDING
+Vehicle ID : 15 Type: MiniBus
+
+Time since the beginning : 0.019 seconds
+Status changed to IN_WASH
+Vehicle ID : 14 Type: SUV
+
+Time since the beginning : 0.019 seconds
+Status changed to DONE
+Vehicle ID : 14 Type: SUV
+
+Time since the beginning : 0.019 seconds
+Status changed to IN_WASH
+Vehicle ID : 13 Type: MiniBus
+
+Time since the beginning : 0.019 seconds
+Status changed to DONE
+Vehicle ID : 13 Type: MiniBus
+
+Time since the beginning : 0.019 seconds
+Status changed to IN_WASH
+Vehicle ID : 15 Type: MiniBus
+
+Time since the beginning : 0.019 seconds
+Status changed to DONE
+Vehicle ID : 15 Type: MiniBus
+
+Time since the beginning : 0.02 seconds
+Status changed to PENDING
+Vehicle ID : 16 Type: SUV
+
+Time since the beginning : 0.02 seconds
+Status changed to PENDING
+Vehicle ID : 17 Type: MiniBus
+
+Time since the beginning : 0.02 seconds
+Status changed to IN_WASH
+Vehicle ID : 16 Type: SUV
+
+Time since the beginning : 0.021 seconds
+Status changed to DONE
+Vehicle ID : 16 Type: SUV
+
+Time since the beginning : 0.021 seconds
+Status changed to IN_WASH
+Vehicle ID : 17 Type: MiniBus
+
+Time since the beginning : 0.021 seconds
+Status changed to DONE
+Vehicle ID : 17 Type: MiniBus
+
+Time since the beginning : 0.022 seconds
+Status changed to PENDING
+Vehicle ID : 19 Type: MiniBus
+
+Time since the beginning : 0.022 seconds
+Status changed to IN_WASH
+Vehicle ID : 19 Type: MiniBus
+
+Time since the beginning : 0.023 seconds
+Status changed to PENDING
+Vehicle ID : 21 Type: SUV
+
+Time since the beginning : 0.023 seconds
+Status changed to IN_WASH
+Vehicle ID : 21 Type: SUV
+
+Time since the beginning : 0.023 seconds
+Status changed to DONE
+Vehicle ID : 21 Type: SUV
+
+Time since the beginning : 0.023 seconds
+Status changed to PENDING
+Vehicle ID : 20 Type: Car
+
+Time since the beginning : 0.023 seconds
+Status changed to IN_WASH
+Vehicle ID : 20 Type: Car
+
+Time since the beginning : 0.023 seconds
+Status changed to DONE
+Vehicle ID : 20 Type: Car
+
+Time since the beginning : 0.023 seconds
+Status changed to PENDING
+Vehicle ID : 18 Type: SUV
+
+Time since the beginning : 0.023 seconds
+Status changed to IN_WASH
+Vehicle ID : 18 Type: SUV
+
+Time since the beginning : 0.024 seconds
+Status changed to DONE
+Vehicle ID : 18 Type: SUV
+
+Time since the beginning : 0.024 seconds
+Status changed to PENDING
+Vehicle ID : 24 Type: MiniBus
+
+Time since the beginning : 0.024 seconds
+Status changed to IN_WASH
+Vehicle ID : 24 Type: MiniBus
+
+Time since the beginning : 0.024 seconds
+Status changed to DONE
+Vehicle ID : 24 Type: MiniBus
+
+Time since the beginning : 0.024 seconds
+Status changed to DONE
+Vehicle ID : 19 Type: MiniBus
+
+Time since the beginning : 0.024 seconds
+Status changed to PENDING
+Vehicle ID : 23 Type: SUV
+
+Time since the beginning : 0.024 seconds
+Status changed to IN_WASH
+Vehicle ID : 23 Type: SUV
+
+Time since the beginning : 0.024 seconds
+Status changed to DONE
+Vehicle ID : 23 Type: SUV
+
+Time since the beginning : 0.024 seconds
+Status changed to PENDING
+Vehicle ID : 22 Type: Car
+
+Time since the beginning : 0.024 seconds
+Status changed to IN_WASH
+Vehicle ID : 22 Type: Car
+
+Time since the beginning : 0.024 seconds
+Status changed to DONE
+Vehicle ID : 22 Type: Car
+
+Time since the beginning : 0.027 seconds
+Status changed to PENDING
+Vehicle ID : 25 Type: MiniBus
+
+Time since the beginning : 0.027 seconds
+Status changed to IN_WASH
+Vehicle ID : 25 Type: MiniBus
+
+Time since the beginning : 0.027 seconds
+Status changed to DONE
+Vehicle ID : 25 Type: MiniBus
+
+Time since the beginning : 0.027 seconds
+Status changed to PENDING
+Vehicle ID : 26 Type: Car
+
+Time since the beginning : 0.027 seconds
+Status changed to IN_WASH
+Vehicle ID : 26 Type: Car
+
+Time since the beginning : 0.027 seconds
+Status changed to DONE
+Vehicle ID : 26 Type: Car
+
+Time since the beginning : 0.029 seconds
+Status changed to PENDING
+Vehicle ID : 27 Type: Car
+
+Time since the beginning : 0.029 seconds
+Status changed to IN_WASH
+Vehicle ID : 27 Type: Car
+
+Time since the beginning : 0.029 seconds
+Status changed to DONE
+Vehicle ID : 27 Type: Car
+
+Time since the beginning : 0.029 seconds
+Status changed to PENDING
+Vehicle ID : 29 Type: SUV
+
+Time since the beginning : 0.029 seconds
+Status changed to IN_WASH
+Vehicle ID : 29 Type: SUV
+
+Time since the beginning : 0.029 seconds
+Status changed to DONE
+Vehicle ID : 29 Type: SUV
+
+Time since the beginning : 0.029 seconds
+Status changed to PENDING
+Vehicle ID : 28 Type: MiniBus
+
+Time since the beginning : 0.029 seconds
+Status changed to IN_WASH
+Vehicle ID : 28 Type: MiniBus
+
+Time since the beginning : 0.029 seconds
+Status changed to DONE
+Vehicle ID : 28 Type: MiniBus
+
+Time since the beginning : 0.034 seconds
+Status changed to PENDING
+Vehicle ID : 30 Type: MiniBus
+
+Time since the beginning : 0.034 seconds
+Status changed to IN_WASH
+Vehicle ID : 30 Type: MiniBus
+
+Time since the beginning : 0.034 seconds
+Status changed to DONE
+Vehicle ID : 30 Type: MiniBus
+
+Time since the beginning : 0.037 seconds
+Status changed to PENDING
+Vehicle ID : 31 Type: SUV
+
+Time since the beginning : 0.037 seconds
+Status changed to IN_WASH
+Vehicle ID : 31 Type: SUV
+
+Time since the beginning : 0.037 seconds
+Status changed to DONE
+Vehicle ID : 31 Type: SUV
+
+Time since the beginning : 0.039 seconds
+Status changed to PENDING
+Vehicle ID : 32 Type: Truck
+
+Time since the beginning : 0.039 seconds
+Status changed to IN_WASH
+Vehicle ID : 32 Type: Truck
+
+Time since the beginning : 0.039 seconds
+Status changed to DONE
+Vehicle ID : 32 Type: Truck
+
+Time since the beginning : 0.039 seconds
+Status changed to PENDING
+Vehicle ID : 33 Type: MiniBus
+
+Time since the beginning : 0.039 seconds
+Status changed to IN_WASH
+Vehicle ID : 33 Type: MiniBus
+
+Time since the beginning : 0.039 seconds
+Status changed to DONE
+Vehicle ID : 33 Type: MiniBus
+
+Time since the beginning : 0.039 seconds
+Status changed to PENDING
+Vehicle ID : 34 Type: Truck
+
+Time since the beginning : 0.039 seconds
+Status changed to IN_WASH
+Vehicle ID : 34 Type: Truck
+
+Time since the beginning : 0.039 seconds
+Status changed to DONE
+Vehicle ID : 34 Type: Truck
+
+Time since the beginning : 0.042 seconds
+Status changed to PENDING
+Vehicle ID : 35 Type: MiniBus
+
+Time since the beginning : 0.042 seconds
+Status changed to IN_WASH
+Vehicle ID : 35 Type: MiniBus
+
+Time since the beginning : 0.042 seconds
+Status changed to DONE
+Vehicle ID : 35 Type: MiniBus
+
+Time since the beginning : 0.046 seconds
+Status changed to PENDING
+Vehicle ID : 36 Type: Car
+
+Time since the beginning : 0.046 seconds
+Status changed to IN_WASH
+Vehicle ID : 36 Type: Car
+
+Time since the beginning : 0.046 seconds
+Status changed to DONE
+Vehicle ID : 36 Type: Car
+
+Time since the beginning : 0.046 seconds
+Status changed to PENDING
+Vehicle ID : 37 Type: SUV
+
+Time since the beginning : 0.046 seconds
+Status changed to IN_WASH
+Vehicle ID : 37 Type: SUV
+
+Time since the beginning : 0.046 seconds
+Status changed to DONE
+Vehicle ID : 37 Type: SUV
+
+Time since the beginning : 0.05 seconds
+Status changed to PENDING
+Vehicle ID : 40 Type: MiniBus
+
+Time since the beginning : 0.05 seconds
+Status changed to PENDING
+Vehicle ID : 42 Type: Car
+
+Time since the beginning : 0.05 seconds
+Status changed to PENDING
+Vehicle ID : 41 Type: Car
+
+Time since the beginning : 0.05 seconds
+Status changed to PENDING
+Vehicle ID : 43 Type: MiniBus
+
+Time since the beginning : 0.05 seconds
+Status changed to PENDING
+Vehicle ID : 39 Type: Car
+
+Time since the beginning : 0.051 seconds
+Status changed to PENDING
+Vehicle ID : 38 Type: Car
+
+Time since the beginning : 0.051 seconds
+Status changed to PENDING
+Vehicle ID : 45 Type: Car
+
+Time since the beginning : 0.051 seconds
+Status changed to IN_WASH
+Vehicle ID : 40 Type: MiniBus
+
+Time since the beginning : 0.051 seconds
+Status changed to DONE
+Vehicle ID : 40 Type: MiniBus
+
+Time since the beginning : 0.051 seconds
+Status changed to PENDING
+Vehicle ID : 44 Type: Truck
+
+Time since the beginning : 0.051 seconds
+Status changed to IN_WASH
+Vehicle ID : 42 Type: Car
+
+Time since the beginning : 0.051 seconds
+Status changed to DONE
+Vehicle ID : 42 Type: Car
+
+Time since the beginning : 0.051 seconds
+Status changed to IN_WASH
+Vehicle ID : 41 Type: Car
+
+Time since the beginning : 0.051 seconds
+Status changed to DONE
+Vehicle ID : 41 Type: Car
+
+Time since the beginning : 0.051 seconds
+Status changed to IN_WASH
+Vehicle ID : 43 Type: MiniBus
+
+Time since the beginning : 0.053 seconds
+Status changed to DONE
+Vehicle ID : 43 Type: MiniBus
+
+Time since the beginning : 0.053 seconds
+Status changed to IN_WASH
+Vehicle ID : 39 Type: Car
+
+Time since the beginning : 0.053 seconds
+Status changed to DONE
+Vehicle ID : 39 Type: Car
+
+Time since the beginning : 0.053 seconds
+Status changed to IN_WASH
+Vehicle ID : 38 Type: Car
+
+Time since the beginning : 0.053 seconds
+Status changed to DONE
+Vehicle ID : 38 Type: Car
+
+Time since the beginning : 0.053 seconds
+Status changed to IN_WASH
+Vehicle ID : 45 Type: Car
+
+Time since the beginning : 0.053 seconds
+Status changed to DONE
+Vehicle ID : 45 Type: Car
+
+Time since the beginning : 0.053 seconds
+Status changed to IN_WASH
+Vehicle ID : 44 Type: Truck
+
+Time since the beginning : 0.053 seconds
+Status changed to DONE
+Vehicle ID : 44 Type: Truck
+
+Time since the beginning : 0.053 seconds
+Status changed to PENDING
+Vehicle ID : 46 Type: MiniBus
+
+Time since the beginning : 0.054 seconds
+Status changed to IN_WASH
+Vehicle ID : 46 Type: MiniBus
+
+Time since the beginning : 0.054 seconds
+Status changed to DONE
+Vehicle ID : 46 Type: MiniBus
+
+Time since the beginning : 0.054 seconds
+Status changed to PENDING
+Vehicle ID : 47 Type: Car
+
+Time since the beginning : 0.054 seconds
+Status changed to IN_WASH
+Vehicle ID : 47 Type: Car
+
+Time since the beginning : 0.054 seconds
+Status changed to DONE
+Vehicle ID : 47 Type: Car
+
+Time since the beginning : 0.055 seconds
+Status changed to PENDING
+Vehicle ID : 49 Type: SUV
+
+Time since the beginning : 0.055 seconds
+Status changed to IN_WASH
+Vehicle ID : 49 Type: SUV
+
+Time since the beginning : 0.055 seconds
+Status changed to DONE
+Vehicle ID : 49 Type: SUV
+
+Time since the beginning : 0.055 seconds
+Status changed to PENDING
+Vehicle ID : 48 Type: SUV
+
+Time since the beginning : 0.055 seconds
+Status changed to IN_WASH
+Vehicle ID : 48 Type: SUV
+
+Time since the beginning : 0.055 seconds
+Status changed to DONE
+Vehicle ID : 48 Type: SUV
+
+Time since the beginning : 0.055 seconds
+Status changed to PENDING
+Vehicle ID : 50 Type: Truck
+
+Time since the beginning : 0.055 seconds
+Status changed to IN_WASH
+Vehicle ID : 50 Type: Truck
+
+Time since the beginning : 0.055 seconds
+Status changed to DONE
+Vehicle ID : 50 Type: Truck
+
+Time since the beginning : 0.057 seconds
+Status changed to PENDING
+Vehicle ID : 51 Type: MiniBus
+
+Time since the beginning : 0.057 seconds
+Status changed to IN_WASH
+Vehicle ID : 51 Type: MiniBus
+
+Time since the beginning : 0.057 seconds
+Status changed to DONE
+Vehicle ID : 51 Type: MiniBus
+
+Time since the beginning : 0.059 seconds
+Status changed to PENDING
+Vehicle ID : 53 Type: Car
+
+Time since the beginning : 0.059 seconds
+Status changed to IN_WASH
+Vehicle ID : 53 Type: Car
+
+Time since the beginning : 0.059 seconds
+Status changed to DONE
+Vehicle ID : 53 Type: Car
+
+Time since the beginning : 0.059 seconds
+Status changed to PENDING
+Vehicle ID : 56 Type: Truck
+
+Time since the beginning : 0.059 seconds
+Status changed to IN_WASH
+Vehicle ID : 56 Type: Truck
+
+Time since the beginning : 0.059 seconds
+Status changed to DONE
+Vehicle ID : 56 Type: Truck
+
+Time since the beginning : 0.059 seconds
+Status changed to PENDING
+Vehicle ID : 54 Type: Car
+
+Time since the beginning : 0.059 seconds
+Status changed to IN_WASH
+Vehicle ID : 54 Type: Car
+
+Time since the beginning : 0.059 seconds
+Status changed to DONE
+Vehicle ID : 54 Type: Car
+
+Time since the beginning : 0.059 seconds
+Status changed to PENDING
+Vehicle ID : 55 Type: Truck
+
+Time since the beginning : 0.06 seconds
+Status changed to IN_WASH
+Vehicle ID : 55 Type: Truck
+
+Time since the beginning : 0.06 seconds
+Status changed to DONE
+Vehicle ID : 55 Type: Truck
+
+Time since the beginning : 0.06 seconds
+Status changed to PENDING
+Vehicle ID : 52 Type: Car
+
+Time since the beginning : 0.06 seconds
+Status changed to IN_WASH
+Vehicle ID : 52 Type: Car
+
+Time since the beginning : 0.06 seconds
+Status changed to DONE
+Vehicle ID : 52 Type: Car
+
+Time since the beginning : 0.06 seconds
+Status changed to PENDING
+Vehicle ID : 57 Type: Truck
+
+Time since the beginning : 0.06 seconds
+Status changed to IN_WASH
+Vehicle ID : 57 Type: Truck
+
+Time since the beginning : 0.06 seconds
+Status changed to DONE
+Vehicle ID : 57 Type: Truck
+
+Time since the beginning : 0.061 seconds
+Status changed to PENDING
+Vehicle ID : 58 Type: Car
+
+Time since the beginning : 0.061 seconds
+Status changed to IN_WASH
+Vehicle ID : 58 Type: Car
+
+Time since the beginning : 0.061 seconds
+Status changed to DONE
+Vehicle ID : 58 Type: Car
+
+Time since the beginning : 0.061 seconds
+Status changed to PENDING
+Vehicle ID : 61 Type: MiniBus
+
+Time since the beginning : 0.061 seconds
+Status changed to IN_WASH
+Vehicle ID : 61 Type: MiniBus
+
+Time since the beginning : 0.061 seconds
+Status changed to DONE
+Vehicle ID : 61 Type: MiniBus
+
+Time since the beginning : 0.062 seconds
+Status changed to PENDING
+Vehicle ID : 60 Type: Truck
+
+Time since the beginning : 0.062 seconds
+Status changed to IN_WASH
+Vehicle ID : 60 Type: Truck
+
+Time since the beginning : 0.062 seconds
+Status changed to DONE
+Vehicle ID : 60 Type: Truck
+
+Time since the beginning : 0.062 seconds
+Status changed to PENDING
+Vehicle ID : 59 Type: MiniBus
+
+Time since the beginning : 0.062 seconds
+Status changed to IN_WASH
+Vehicle ID : 59 Type: MiniBus
+
+Time since the beginning : 0.062 seconds
+Status changed to DONE
+Vehicle ID : 59 Type: MiniBus
+
+Time since the beginning : 0.062 seconds
+Status changed to PENDING
+Vehicle ID : 64 Type: MiniBus
+
+Time since the beginning : 0.062 seconds
+Status changed to IN_WASH
+Vehicle ID : 64 Type: MiniBus
+
+Time since the beginning : 0.062 seconds
+Status changed to DONE
+Vehicle ID : 64 Type: MiniBus
+
+Time since the beginning : 0.062 seconds
+Status changed to PENDING
+Vehicle ID : 65 Type: Truck
+
+Time since the beginning : 0.062 seconds
+Status changed to IN_WASH
+Vehicle ID : 65 Type: Truck
+
+Time since the beginning : 0.062 seconds
+Status changed to DONE
+Vehicle ID : 65 Type: Truck
+
+Time since the beginning : 0.062 seconds
+Status changed to PENDING
+Vehicle ID : 63 Type: SUV
+
+Time since the beginning : 0.062 seconds
+Status changed to IN_WASH
+Vehicle ID : 63 Type: SUV
+
+Time since the beginning : 0.062 seconds
+Status changed to DONE
+Vehicle ID : 63 Type: SUV
+
+Time since the beginning : 0.062 seconds
+Status changed to PENDING
+Vehicle ID : 62 Type: Car
+
+Time since the beginning : 0.063 seconds
+Status changed to IN_WASH
+Vehicle ID : 62 Type: Car
+
+Time since the beginning : 0.063 seconds
+Status changed to DONE
+Vehicle ID : 62 Type: Car
+
+Time since the beginning : 0.064 seconds
+Status changed to PENDING
+Vehicle ID : 67 Type: Truck
+
+Time since the beginning : 0.064 seconds
+Status changed to IN_WASH
+Vehicle ID : 67 Type: Truck
+
+Time since the beginning : 0.064 seconds
+Status changed to DONE
+Vehicle ID : 67 Type: Truck
+
+Time since the beginning : 0.064 seconds
+Status changed to PENDING
+Vehicle ID : 66 Type: MiniBus
+
+Time since the beginning : 0.064 seconds
+Status changed to IN_WASH
+Vehicle ID : 66 Type: MiniBus
+
+Time since the beginning : 0.064 seconds
+Status changed to DONE
+Vehicle ID : 66 Type: MiniBus
+
+Time since the beginning : 0.067 seconds
+Status changed to PENDING
+Vehicle ID : 69 Type: Car
+
+Time since the beginning : 0.067 seconds
+Status changed to IN_WASH
+Vehicle ID : 69 Type: Car
+
+Time since the beginning : 0.067 seconds
+Status changed to DONE
+Vehicle ID : 69 Type: Car
+
+Time since the beginning : 0.067 seconds
+Status changed to PENDING
+Vehicle ID : 71 Type: Truck
+
+Time since the beginning : 0.067 seconds
+Status changed to IN_WASH
+Vehicle ID : 71 Type: Truck
+
+Time since the beginning : 0.067 seconds
+Status changed to DONE
+Vehicle ID : 71 Type: Truck
+
+Time since the beginning : 0.067 seconds
+Status changed to PENDING
+Vehicle ID : 70 Type: Car
+
+Time since the beginning : 0.067 seconds
+Status changed to IN_WASH
+Vehicle ID : 70 Type: Car
+
+Time since the beginning : 0.067 seconds
+Status changed to DONE
+Vehicle ID : 70 Type: Car
+
+Time since the beginning : 0.067 seconds
+Status changed to PENDING
+Vehicle ID : 68 Type: Truck
+
+Time since the beginning : 0.068 seconds
+Status changed to IN_WASH
+Vehicle ID : 68 Type: Truck
+
+Time since the beginning : 0.068 seconds
+Status changed to DONE
+Vehicle ID : 68 Type: Truck
+
+Time since the beginning : 0.068 seconds
+Status changed to PENDING
+Vehicle ID : 74 Type: Car
+
+Time since the beginning : 0.068 seconds
+Status changed to IN_WASH
+Vehicle ID : 74 Type: Car
+
+Time since the beginning : 0.068 seconds
+Status changed to DONE
+Vehicle ID : 74 Type: Car
+
+Time since the beginning : 0.068 seconds
+Status changed to PENDING
+Vehicle ID : 75 Type: Car
+
+Time since the beginning : 0.068 seconds
+Status changed to IN_WASH
+Vehicle ID : 75 Type: Car
+
+Time since the beginning : 0.068 seconds
+Status changed to DONE
+Vehicle ID : 75 Type: Car
+
+Time since the beginning : 0.068 seconds
+Status changed to PENDING
+Vehicle ID : 72 Type: SUV
+
+Time since the beginning : 0.068 seconds
+Status changed to IN_WASH
+Vehicle ID : 72 Type: SUV
+
+Time since the beginning : 0.068 seconds
+Status changed to DONE
+Vehicle ID : 72 Type: SUV
+
+Time since the beginning : 0.068 seconds
+Status changed to PENDING
+Vehicle ID : 73 Type: Truck
+
+Time since the beginning : 0.068 seconds
+Status changed to IN_WASH
+Vehicle ID : 73 Type: Truck
+
+Time since the beginning : 0.068 seconds
+Status changed to DONE
+Vehicle ID : 73 Type: Truck
+
+Time since the beginning : 0.071 seconds
+Status changed to PENDING
+Vehicle ID : 77 Type: Truck
+
+Time since the beginning : 0.071 seconds
+Status changed to IN_WASH
+Vehicle ID : 77 Type: Truck
+
+Time since the beginning : 0.071 seconds
+Status changed to DONE
+Vehicle ID : 77 Type: Truck
+
+Time since the beginning : 0.071 seconds
+Status changed to PENDING
+Vehicle ID : 80 Type: SUV
+
+Time since the beginning : 0.071 seconds
+Status changed to IN_WASH
+Vehicle ID : 80 Type: SUV
+
+Time since the beginning : 0.071 seconds
+Status changed to DONE
+Vehicle ID : 80 Type: SUV
+
+Time since the beginning : 0.071 seconds
+Status changed to PENDING
+Vehicle ID : 79 Type: Truck
+
+Time since the beginning : 0.071 seconds
+Status changed to IN_WASH
+Vehicle ID : 79 Type: Truck
+
+Time since the beginning : 0.071 seconds
+Status changed to DONE
+Vehicle ID : 79 Type: Truck
+
+Time since the beginning : 0.071 seconds
+Status changed to PENDING
+Vehicle ID : 78 Type: Truck
+
+Time since the beginning : 0.071 seconds
+Status changed to IN_WASH
+Vehicle ID : 78 Type: Truck
+
+Time since the beginning : 0.071 seconds
+Status changed to DONE
+Vehicle ID : 78 Type: Truck
+
+Time since the beginning : 0.071 seconds
+Status changed to PENDING
+Vehicle ID : 76 Type: Car
+
+Time since the beginning : 0.072 seconds
+Status changed to IN_WASH
+Vehicle ID : 76 Type: Car
+
+Time since the beginning : 0.072 seconds
+Status changed to DONE
+Vehicle ID : 76 Type: Car
+
+Time since the beginning : 0.074 seconds
+Status changed to PENDING
+Vehicle ID : 81 Type: Car
+
+Time since the beginning : 0.074 seconds
+Status changed to IN_WASH
+Vehicle ID : 81 Type: Car
+
+Time since the beginning : 0.074 seconds
+Status changed to DONE
+Vehicle ID : 81 Type: Car
+
+Time since the beginning : 0.078 seconds
+Status changed to PENDING
+Vehicle ID : 82 Type: Truck
+
+Time since the beginning : 0.078 seconds
+Status changed to IN_WASH
+Vehicle ID : 82 Type: Truck
+
+Time since the beginning : 0.078 seconds
+Status changed to DONE
+Vehicle ID : 82 Type: Truck
+
+Time since the beginning : 0.081 seconds
+Status changed to PENDING
+Vehicle ID : 83 Type: MiniBus
+
+Time since the beginning : 0.081 seconds
+Status changed to IN_WASH
+Vehicle ID : 83 Type: MiniBus
+
+Time since the beginning : 0.081 seconds
+Status changed to DONE
+Vehicle ID : 83 Type: MiniBus
+
+Time since the beginning : 0.083 seconds
+Status changed to PENDING
+Vehicle ID : 85 Type: SUV
+
+Time since the beginning : 0.083 seconds
+Status changed to IN_WASH
+Vehicle ID : 85 Type: SUV
+
+Time since the beginning : 0.083 seconds
+Status changed to DONE
+Vehicle ID : 85 Type: SUV
+
+Time since the beginning : 0.083 seconds
+Status changed to PENDING
+Vehicle ID : 87 Type: Car
+
+Time since the beginning : 0.083 seconds
+Status changed to IN_WASH
+Vehicle ID : 87 Type: Car
+
+Time since the beginning : 0.083 seconds
+Status changed to DONE
+Vehicle ID : 87 Type: Car
+
+Time since the beginning : 0.083 seconds
+Status changed to PENDING
+Vehicle ID : 86 Type: Truck
+
+Time since the beginning : 0.083 seconds
+Status changed to IN_WASH
+Vehicle ID : 86 Type: Truck
+
+Time since the beginning : 0.084 seconds
+Status changed to DONE
+Vehicle ID : 86 Type: Truck
+
+Time since the beginning : 0.084 seconds
+Status changed to PENDING
+Vehicle ID : 84 Type: MiniBus
+
+Time since the beginning : 0.084 seconds
+Status changed to IN_WASH
+Vehicle ID : 84 Type: MiniBus
+
+Time since the beginning : 0.084 seconds
+Status changed to DONE
+Vehicle ID : 84 Type: MiniBus
+
+Time since the beginning : 0.084 seconds
+Status changed to PENDING
+Vehicle ID : 88 Type: SUV
+
+Time since the beginning : 0.084 seconds
+Status changed to IN_WASH
+Vehicle ID : 88 Type: SUV
+
+Time since the beginning : 0.084 seconds
+Status changed to DONE
+Vehicle ID : 88 Type: SUV
+
+Time since the beginning : 0.087 seconds
+Status changed to PENDING
+Vehicle ID : 91 Type: Car
+
+Time since the beginning : 0.087 seconds
+Status changed to IN_WASH
+Vehicle ID : 91 Type: Car
+
+Time since the beginning : 0.087 seconds
+Status changed to DONE
+Vehicle ID : 91 Type: Car
+
+Time since the beginning : 0.087 seconds
+Status changed to PENDING
+Vehicle ID : 93 Type: SUV
+
+Time since the beginning : 0.087 seconds
+Status changed to IN_WASH
+Vehicle ID : 93 Type: SUV
+
+Time since the beginning : 0.087 seconds
+Status changed to DONE
+Vehicle ID : 93 Type: SUV
+
+Time since the beginning : 0.087 seconds
+Status changed to PENDING
+Vehicle ID : 92 Type: SUV
+
+Time since the beginning : 0.087 seconds
+Status changed to IN_WASH
+Vehicle ID : 92 Type: SUV
+
+Time since the beginning : 0.087 seconds
+Status changed to DONE
+Vehicle ID : 92 Type: SUV
+
+Time since the beginning : 0.087 seconds
+Status changed to PENDING
+Vehicle ID : 90 Type: Truck
+
+Time since the beginning : 0.088 seconds
+Status changed to IN_WASH
+Vehicle ID : 90 Type: Truck
+
+Time since the beginning : 0.088 seconds
+Status changed to DONE
+Vehicle ID : 90 Type: Truck
+
+Time since the beginning : 0.088 seconds
+Status changed to PENDING
+Vehicle ID : 89 Type: Truck
+
+Time since the beginning : 0.088 seconds
+Status changed to IN_WASH
+Vehicle ID : 89 Type: Truck
+
+Time since the beginning : 0.088 seconds
+Status changed to DONE
+Vehicle ID : 89 Type: Truck
+
+Time since the beginning : 0.089 seconds
+Status changed to PENDING
+Vehicle ID : 95 Type: Truck
+
+Time since the beginning : 0.089 seconds
+Status changed to IN_WASH
+Vehicle ID : 95 Type: Truck
+
+Time since the beginning : 0.089 seconds
+Status changed to DONE
+Vehicle ID : 95 Type: Truck
+
+Time since the beginning : 0.089 seconds
+Status changed to PENDING
+Vehicle ID : 94 Type: MiniBus
+
+Time since the beginning : 0.089 seconds
+Status changed to IN_WASH
+Vehicle ID : 94 Type: MiniBus
+
+Time since the beginning : 0.089 seconds
+Status changed to DONE
+Vehicle ID : 94 Type: MiniBus
+
+Time since the beginning : 0.091 seconds
+Status changed to PENDING
+Vehicle ID : 96 Type: Car
+
+Time since the beginning : 0.091 seconds
+Status changed to IN_WASH
+Vehicle ID : 96 Type: Car
+
+Time since the beginning : 0.091 seconds
+Status changed to DONE
+Vehicle ID : 96 Type: Car
+
+Time since the beginning : 0.094 seconds
+Status changed to PENDING
+Vehicle ID : 97 Type: Car
+
+Time since the beginning : 0.094 seconds
+Status changed to IN_WASH
+Vehicle ID : 97 Type: Car
+
+Time since the beginning : 0.094 seconds
+Status changed to DONE
+Vehicle ID : 97 Type: Car
+
+Time since the beginning : 0.094 seconds
+Status changed to PENDING
+Vehicle ID : 98 Type: Car
+
+Time since the beginning : 0.094 seconds
+Status changed to IN_WASH
+Vehicle ID : 98 Type: Car
+
+Time since the beginning : 0.094 seconds
+Status changed to DONE
+Vehicle ID : 98 Type: Car
+
+Time since the beginning : 0.097 seconds
+Status changed to PENDING
+Vehicle ID : 99 Type: Car
+
+Time since the beginning : 0.097 seconds
+Status changed to IN_WASH
+Vehicle ID : 99 Type: Car
+
+Time since the beginning : 0.097 seconds
+Status changed to DONE
+Vehicle ID : 99 Type: Car
+
+Time since the beginning : 0.103 seconds
+Status changed to PENDING
+Vehicle ID : 100 Type: Car
+
+Time since the beginning : 0.103 seconds
+Status changed to IN_WASH
+Vehicle ID : 100 Type: Car
+
+Time since the beginning : 0.103 seconds
+Status changed to DONE
+Vehicle ID : 100 Type: Car
+

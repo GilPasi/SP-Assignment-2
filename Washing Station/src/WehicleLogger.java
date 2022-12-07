@@ -26,14 +26,19 @@ public class WehicleLogger {
 		}
 	}
 	
-	public void log (String msg) {
+	public void log (String msg,int leftVehicles) {
+		
 		try {
+			
 			fw.write(msg);
-			fw.close();
+
+			if(leftVehicles <= 0) {
+				fw.close();
+			}
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		
 	}
-
 }
