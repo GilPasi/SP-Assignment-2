@@ -77,6 +77,7 @@ public class Runner {
 			//Sum work day
 			multipleJoin(customers);
 			ww.printPostWash();
+			
 	}
 	
 	

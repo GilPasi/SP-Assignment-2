@@ -8,7 +8,7 @@ public abstract class Wehicle{
 	protected static int nextId = 1;//This helps to calculate the next id in such a way that each id is unique
 	protected Status vehicleStatus;
 	protected boolean isFirst = false;//Not first by default
-	protected static WehicleWasher ww;
+	protected WehicleWasher ww;
 	
 	//Constructor
 	public Wehicle (WehicleWasher ww ) {

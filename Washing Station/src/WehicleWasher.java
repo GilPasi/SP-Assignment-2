@@ -5,11 +5,12 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 
 public class WehicleWasher {
-	//3 Queues for documenting the station's status
-	//All empty by default
-	private  WehicleLogger logger;
+	
+	//Assistant properties
+	public  WehicleLogger logger;
 	private static long startTime = System.currentTimeMillis();
 	
+	//Documentation properties
 	private ArrayDeque<Wehicle> preWash = new ArrayDeque<Wehicle>();
 	private ArrayList<Wehicle> inWash = new ArrayList<Wehicle>();
 	
@@ -19,17 +20,18 @@ public class WehicleWasher {
 	private ArrayList<Wehicle> washedSUVs = new ArrayList<Wehicle>();
 	private ArrayList<Wehicle> washedMiniBuses = new ArrayList<Wehicle>();
 
+	//Modifiers
 	private double washPeriod;
 	private int washingPositions;
 	private int leftVehicles;
 
 	
-	public WehicleWasher(double washPeriod
-							,int washingPositions,int leftVehicles) {		
+	public WehicleWasher(double washPeriod,int washingPositions,int leftVehicles) {		
 		
-		this.washPeriod = washPeriod;
-		this.washingPositions = washingPositions;
-		this.leftVehicles = leftVehicles;
+		//Avoid invalid arguments
+		this.washPeriod = washPeriod > 0 ? washPeriod : 1;
+		this.washingPositions = washingPositions > 0 ? washingPositions : 1;
+		this.leftVehicles = leftVehicles > 0 ? leftVehicles : 1;
 		
 		logger = new WehicleLogger();		
 	}
@@ -37,9 +39,6 @@ public class WehicleWasher {
 
 	public synchronized void startWash(Wehicle w){	
 		/**This method takes a vehicle from the waiting line*/
-		
-		//System.out.println(w.id + " In startWash");//TODO delete
-
 		
 		while(!w.isFirst) {//@PRE the vehicle must be the first in line
 			try {	
@@ -85,8 +84,6 @@ public class WehicleWasher {
 	
 	public synchronized void  endWash(Wehicle w)    {
 		/**This method moves the given vehicle to the washed cars list*/		
-
-	//	System.out.println(w.id + " In endWash");//TODO delete
 
 		int index = inWash.indexOf(w);
 
