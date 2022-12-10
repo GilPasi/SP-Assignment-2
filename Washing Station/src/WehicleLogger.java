@@ -1,3 +1,6 @@
+/*System-Programming : Assignment 2
+ *Authors: Yulia Moshan 319565610
+ *			Gil Pasi    206500936 */
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -6,7 +9,7 @@ public class WehicleLogger {
 	private static final String DEF_PATH = "log.txt";
 	private File log;
 	private FileWriter fw;
-	
+
 	public WehicleLogger() {
 		log = new File(DEF_PATH);
 		try {
@@ -15,8 +18,7 @@ public class WehicleLogger {
 			e.printStackTrace();
 		}
 	}
-	
-	
+
 	public WehicleLogger(String path) {
 		log = new File(path);
 		try {
@@ -25,15 +27,13 @@ public class WehicleLogger {
 			e.printStackTrace();
 		}
 	}
-	
-	public void log (String msg) {
+
+	public void log(String msg) {
 		try {
 			fw.write(msg);
 			fw.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
 	}
-
 }

@@ -1,167 +1,146 @@
 /*System-Prgramming : Assignment 2
  *Authors: Yulia Moshan 319565610
  *			Gil Pasi    206500936 */
-import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.ArrayDeque;
+import java.util.concurrent.Semaphore;
 
 public class WehicleWasher {
-	//3 Queues for documenting the station's status
-	//All empty by default
+	// Queues for documenting the station's status
+	// All empty by default
 	private ArrayDeque<Wehicle> preWash = new ArrayDeque<Wehicle>();
 	private ArrayList<Wehicle> inWash = new ArrayList<Wehicle>();
-	
+
 	private ArrayList<Wehicle> washedCars = new ArrayList<Wehicle>();
 	private ArrayList<Wehicle> washedTrucks = new ArrayList<Wehicle>();
 	private ArrayList<Wehicle> washedSUVs = new ArrayList<Wehicle>();
 	private ArrayList<Wehicle> washedMiniBuses = new ArrayList<Wehicle>();
 
-	
-	
-	private double arrivalPeriod;
-	private double washPeriod;
-	private int washingPositions;
-	private int leftVehicles;
-	
-	public WehicleWasher(double arrivalPeriod, double washPeriod
-							,int washingPositions,int leftVehicles) {
-		
-		this.arrivalPeriod = arrivalPeriod;
-		this.washPeriod = washPeriod;
-		this.washingPositions = washingPositions;
-		this.leftVehicles = leftVehicles;
-		
-		for(int i = 0 ; i < washingPositions ; ++i) {
-			//TODO create washing positions threads and initiate them
-			
-		}
-		
-	}
-	
-	//============================Work Day Procedure====================================
+	private WehicleLogger logger;
+	private double averageArrival;
+	private double averageWash;
+	private Semaphore washingStations;
+	private int vehiclesAmount;
 
-	public void workDay() {
-		while (leftVehicles > 0) {
-			
+	public WehicleWasher(double averageArrival, double averageWash, int washingStations, int vehiclesAmount) {
+		this.averageArrival = averageArrival;
+		this.averageWash = averageWash;
+		this.washingStations = new Semaphore(washingStations, true);
+		this.vehiclesAmount = vehiclesAmount;
+		logger = new WehicleLogger();
+	}
+
+	// initialize vehicles threads and adding them to preWash list
+	public synchronized void arrival(Wehicle vehicle) {
+		while (vehiclesAmount > 0) {
 			try {
-				preWash.add(generateVehicle());
-				Thread.sleep((long) calcNext(true));//Calculate and wait for the next vehicle
-				--leftVehicles;//decrease today's quantity
-				
-				//Address possible issues 
+				preWash.add(vehicle);
+				--vehiclesAmount;// decrease today's quantity
+				vehicle.setStatus(Status.PENDING);
+				logger.log(vehicle.getStats());
+				Thread.sleep((long) calcNext(true));// Calculate and wait for the next vehicle
 			} catch (InterruptedException e) {
 				e.printStackTrace();
-			
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
 				e.printStackTrace();
 			}
-		}//Close for loop
+		} // Close for loop
+	}
+
+	public void startWash(Wehicle vehicle) {
+		while (!preWash.isEmpty() && preWash.getFirst() == vehicle) {
+			try {
+				washingStations.acquire();
+				inWash.add(vehicle);
+				preWash.remove(vehicle);
+				vehicle.setStatus(Status.IN_WASH);
+				synchronized (this) {
+					logger.log(vehicle.getStats());
+				}
+				Thread.sleep((long) calcNext(false));// Calculate and wait for the wash
+				washingStations.release();
+
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+				e.printStackTrace();
+			}
+		}
 	}
 	
-	
-	 public double calcNext(boolean calcArrival) {
-		/**This method finds the next time for a vehicle to arrive or
-		 * for a vehicle to get washed depending on the boolean flag it gets.*/
-		
+	public void doneWash(Wehicle vehicle) {
+		while (!inWash.isEmpty()) {
+			try {
+				if (vehicle instanceof Car)
+					washedCars.add(vehicle);
+
+				if (vehicle instanceof Truck)
+					washedTrucks.add(vehicle);
+
+				if (vehicle instanceof SUV)
+					washedSUVs.add(vehicle);
+
+				if (vehicle instanceof MiniBus)
+					washedMiniBuses.add(vehicle);
+				else
+					throw new Exception("Invalid vehicle instance");
+				inWash.remove(vehicle);
+				vehicle.setStatus(Status.DONE);
+				synchronized (this) {
+					logger.log(vehicle.getStats());
+				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public double calcNext(boolean calcArrival) {
+		/**
+		 * This method finds the next time for a vehicle to arrive or for a vehicle to
+		 * get washed depending on the boolean flag it gets.
+		 */
+
 		double U = Math.random();
-		double nextTime = -ln(U);//Till now both calculations are the same
-		
-		//Differ calculations
-		if(calcArrival)
-			nextTime /= arrivalPeriod;
-		else 
-			nextTime /= washPeriod;
-		
+		double nextTime = -ln(U);// Till now both calculations are the same
+
+		// Differ calculations
+		if (calcArrival)
+			nextTime /= averageArrival;
+		else
+			nextTime /= averageWash;
+
 		return nextTime;
 	}
-	
-	
-	private double ln (double operand) {
-		/**Since Java's Math class does not include the LOGe = LN 
-		 * function, this will simulate the mathematics function
-		 * */
-		
+
+	private double ln(double operand) {
+		/**
+		 * Since Java's Math class does not include the LOGe = LN function, this will
+		 * simulate the mathematics function
+		 */
+
 		double numerator = Math.log(operand);
 		double denominator = Math.log(Math.E);
-		
-		return numerator/denominator;
-		/*Used the logarithm laws 
-		 * d
-		 * log(a,b) / log(a,c) = log (b,c)
+
+		return numerator / denominator;
+		/*
+		 * Used the logarithm laws d log(a,b) / log(a,c) = log(b,c)
 		 * 
-		 *  therefore: 
-		 *  log (operand,2) / log (Math.E,2) = log(operand,Math.E) = ln(operand)
-		 * */
+		 * therefore: log(operand,2) / log(Math.E,2) = log(operand,Math.E) = ln(operand)
+		 */
 	}
-	
-	private Wehicle generateVehicle() throws Exception{
-		 int indicator =  (int) ((Math.random() * (4 - 1)) + 1);
-		 Wehicle returnWehicle = null;
-		 
-		 switch(indicator) {
-		 case 1: 
-			 returnWehicle = new Car();
-			 break;
-		 case 2: 
-			 returnWehicle = new Truck();
-			 break;
 
-		 case 3: 
-			 returnWehicle = new SUV();
-			 break;
-
-		 case 4: 
-			 returnWehicle = new MiniBus();
-			 break;
-
-		 default:
-			 throw new Exception ("Bad random number generated");
-			  
-		 }
-		 return returnWehicle;
-
+		public double getWashPeriod() {
+		return averageWash;
 	}
-	
-	//========================================================================
-	
-	
-	public Wehicle startWash() throws NoQueueException {
-		/**This method takes a vehicle from the waiting line*/
-		
-		if(preWash.size() == 0 ) // Thread cannot take a vehicle from an empty line
-			throw new NoQueueException();
-		
-		Wehicle wehicle = preWash.remove();
-		inWash.add(wehicle);
-		return wehicle;
-		
-	}
-	
-	
-	public void  endWash(int index ) throws Exception  {
-		/**This method moves the given vehicle to the washed cars list*/
-		
-		Wehicle wehicle = inWash.remove(index);
-		
-		if(wehicle instanceof Car)
-			washedCars.add(inWash.remove(index));
-		
-		if(wehicle instanceof Truck)
-			washedTrucks.add(inWash.remove(index));
-		
-		if(wehicle instanceof SUV)
-			washedSUVs.add(inWash.remove(index));
-		
-		if(wehicle instanceof MiniBus)
-			washedMiniBuses.add(inWash.remove(index));
-		else throw new Exception ("Invalid vehicle instance");
 
-			
-		
+	public int getLeftVehicles() {
+		return vehiclesAmount;
 	}
-	
-	
-	public double getWashPeriod() {return washPeriod;}
-	public int getLeftVehicles() {return leftVehicles;}
-	
+
 }
