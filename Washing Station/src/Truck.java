@@ -5,19 +5,14 @@ public class Truck extends Wehicle {
 
 	WehicleWasher washer;
 
-	public Truck(WehicleWasher washer) {
-		super();
+	public Truck(WehicleWasher washer, int id) {
+		super(id);
 		this.washer = washer;
 	}
 
-	public void run() {
-		washer.arrival(this);
-		washer.startWash(this);
-		washer.doneWash(this);
-	}
-	
 	public String printStats() {
 		String out = super.getStats() + " Vehicle type: Truck";
+		System.out.println(out);
 		return out;
 	}
 }

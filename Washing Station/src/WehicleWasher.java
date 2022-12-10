@@ -30,6 +30,7 @@ public class WehicleWasher {
 		logger = new WehicleLogger();
 	}
 
+	// initialize vehicles threads and adding them to preWash list
 	public synchronized void arrival(Wehicle vehicle) {
 		
 		
@@ -41,6 +42,7 @@ public class WehicleWasher {
 				--vehiclesAmount;// decrease today's quantity
 				
 				vehicle.setStatus(Status.PENDING);
+<<<<<<< HEAD
 				
 				//logger.log(vehicle.getStats());
 				System.out.println(vehicle.getStats());
@@ -48,36 +50,42 @@ public class WehicleWasher {
 				System.out.println("2");
 			} 
 			catch (InterruptedException e) {
+=======
+				logger.log(vehicle.getStats());
+				Thread.sleep((long) calcNext(true));// Calculate and wait for the next vehicle
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+>>>>>>> parent of aeb5781 (additional changes to all classes in task1)
 				e.printStackTrace();
 			}
-		}
+		} // Close for loop
 	}
 
-	public synchronized void startWash(Wehicle vehicle) {
-		while (preWash.getFirst() != vehicle) {
+	public void startWash(Wehicle vehicle) {
+		while (!preWash.isEmpty() && preWash.getFirst() == vehicle) {
 			try {
-				wait();
+				washingStations.acquire();
+				inWash.add(vehicle);
+				preWash.remove(vehicle);
+				vehicle.setStatus(Status.IN_WASH);
+				synchronized (this) {
+					logger.log(vehicle.getStats());
+				}
+				Thread.sleep((long) calcNext(false));// Calculate and wait for the wash
+				washingStations.release();
 
 			} catch (InterruptedException e) {
 				e.printStackTrace();
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+				e.printStackTrace();
 			}
 		}
-		try {
-			washingStations.acquire();
-			inWash.add(preWash.pop());
-			vehicle.setStatus(Status.IN_WASH);
-//				logger.log(vehicle.getStats());
-			Thread.sleep((long) calcNext(averageWash));// Calculate and wait for the wash
-			System.out.println(vehicle.getStats());
-			washingStations.release();
-		} 
-		catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		notifyAll();
 	}
 	
-	public synchronized void doneWash(Wehicle vehicle) {
+	public void doneWash(Wehicle vehicle) {
 		while (!inWash.isEmpty()) {
 			try {
 				if (vehicle instanceof Car)
@@ -91,30 +99,38 @@ public class WehicleWasher {
 
 				if (vehicle instanceof MiniBus)
 					washedMiniBuses.add(vehicle);
-
+				else
+					throw new Exception("Invalid vehicle instance");
 				inWash.remove(vehicle);
 				vehicle.setStatus(Status.DONE);
-//					logger.log(vehicle.getStats());
-				System.out.println(vehicle.getStats());
-			} 
-			catch (Exception e) {
+				synchronized (this) {
+					logger.log(vehicle.getStats());
+				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} catch (Exception e) {
 				System.out.println(e.getMessage());
 				e.printStackTrace();
 			}
-		}		
-		notifyAll();
+		}
 	}
 
-	public double calcNext(double lambda) {
+	public double calcNext(boolean calcArrival) {
 		/**
 		 * This method finds the next time for a vehicle to arrive or for a vehicle to
-		 * get washed depending on the lambda value it gets.
+		 * get washed depending on the boolean flag it gets.
 		 */
+
 		double U = Math.random();
 		double nextTime = -ln(U);// Till now both calculations are the same
 
 		// Differ calculations
-		return nextTime/= lambda;
+		if (calcArrival)
+			nextTime /= averageArrival;
+		else
+			nextTime /= averageWash;
+
+		return nextTime;
 	}
 
 	private double ln(double operand) {
@@ -134,11 +150,12 @@ public class WehicleWasher {
 		 */
 	}
 
-	public double getWashPeriod() {
+		public double getWashPeriod() {
 		return averageWash;
 	}
 
 	public int getLeftVehicles() {
 		return vehiclesAmount;
 	}
+
 }
