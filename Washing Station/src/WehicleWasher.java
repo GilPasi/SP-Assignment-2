@@ -31,14 +31,21 @@ public class WehicleWasher {
 	}
 
 	public synchronized void arrival(Wehicle vehicle) {
+		
+		
 		while (vehiclesAmount > 0) {
+			System.out.println("Here");
 			try {
 				preWash.add(vehicle);
+				
 				--vehiclesAmount;// decrease today's quantity
+				
 				vehicle.setStatus(Status.PENDING);
+				
 				//logger.log(vehicle.getStats());
 				System.out.println(vehicle.getStats());
 				Thread.sleep((long) calcNext(averageArrival));// Calculate and wait for the next vehicle
+				System.out.println("2");
 			} 
 			catch (InterruptedException e) {
 				e.printStackTrace();

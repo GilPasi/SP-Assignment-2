@@ -33,9 +33,13 @@ public class Runner {
 		} catch (Exception e) {
 		}
 		
-		for (int i = 0; i < totalVehicles; i++) {
-			new Thread(vehicles.get(i)).start();
-		}
+		SUV s = new SUV(washer);
+		Thread t =  new Thread(s);
+		t.start();
+		//		
+//		for (int i = 0; i < totalVehicles; i++) {
+//			new Thread(vehicles.get(i)).start();
+//		}
 
 	}
 
