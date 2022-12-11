@@ -1,0 +1,48 @@
+Time since the beginning : 0.001 seconds
+Status changed to PENDING
+Vehicle ID : 1 Type: Truck
+
+Time since the beginning : 0.002 seconds
+Status changed to IN_WASH
+Vehicle ID : 1 Type: Truck
+
+Time since the beginning : 0.003 seconds
+Status changed to DONE
+Vehicle ID : 1 Type: Truck
+
+Time since the beginning : 0.003 seconds
+Status changed to PENDING
+Vehicle ID : 4 Type: Truck
+
+Time since the beginning : 0.003 seconds
+Status changed to IN_WASH
+Vehicle ID : 4 Type: Truck
+
+Time since the beginning : 0.003 seconds
+Status changed to DONE
+Vehicle ID : 4 Type: Truck
+
+Time since the beginning : 0.003 seconds
+Status changed to PENDING
+Vehicle ID : 3 Type: Car
+
+Time since the beginning : 0.003 seconds
+Status changed to IN_WASH
+Vehicle ID : 3 Type: Car
+
+Time since the beginning : 0.004 seconds
+Status changed to DONE
+Vehicle ID : 3 Type: Car
+
+Time since the beginning : 0.004 seconds
+Status changed to PENDING
+Vehicle ID : 2 Type: Car
+
+Time since the beginning : 0.004 seconds
+Status changed to IN_WASH
+Vehicle ID : 2 Type: Car
+
+Time since the beginning : 0.004 seconds
+Status changed to DONE
+Vehicle ID : 2 Type: Car
+
