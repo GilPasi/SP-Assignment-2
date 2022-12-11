@@ -36,7 +36,7 @@ public abstract class Game {
 			return Players.O;
 	}
 	
-	public String getFreeCells() {
+	public synchronized int [][] getFreeCells() {
 		String freeCells = "";
 		
 		//Each two characters in the string represent a free cell
@@ -47,8 +47,41 @@ public abstract class Game {
 					freeCells +=j;
 				}
 			}
+		}		
+		
+		return stringToMatrix(freeCells);//Convert to easier format
+	}
+	
+	private int[][] stringToMatrix(String str){
+		final int CELL_SIZE = 2;
+		final int LEN = str.length() / CELL_SIZE;
+		int [][] converted = new int [LEN][CELL_SIZE];
+		
+		for(int i = 0 ; i < LEN ; i ++) {
+			converted [i][0] = str.charAt(CELL_SIZE * i) - '0';
+			converted [i][1] = str.charAt(CELL_SIZE * i + 1) - '0';
+	
 		}
-		return freeCells;
+		
+
+		return converted;
+		
+	}
+	public synchronized void makeMove(int row , int col) throws Exception{
+		
+		if(gameBoard [row][col] != '\0')
+			throw new Exception("Illegal move");
+		
+		char sign;
+		
+		if(isXTurn)
+			sign = 'X';
+		else
+			sign = 'O';
+		
+		gameBoard[row][col] = sign;
+		
+		isXTurn = !isXTurn;//Change turn 
 	}
 
 	//Getters + Setters
