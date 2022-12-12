@@ -5,19 +5,14 @@ public class SUV extends Wehicle {
 
 	WehicleWasher washer;
 
-	public SUV(WehicleWasher washer) {
-		super();
+	public SUV(WehicleWasher washer, int id) {
+		super(id);
 		this.washer = washer;
-	}
-	
-	public void run() {
-		washer.arrival(this);
-		washer.startWash(this);
-		washer.doneWash(this);
 	}
 
 	public String printStats() {
 		String out = super.getStats() + " Vehicle type: SUV";
+		System.out.println(out);
 		return out;
 	}
 }

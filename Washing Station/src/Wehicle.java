@@ -3,14 +3,13 @@
  *			Gil Pasi    206500936 */
 public abstract class Wehicle implements Runnable{
 
-	protected static int nextID = 1;// This helps to calculate the next id in such a way that each id is unique
-	protected int id;
-	protected static long startTime = System.currentTimeMillis();
-	protected Status vehicleStatus;
+	private int id;
+	private static long startTime = System.currentTimeMillis();
+	private Status vehicleStatus;
 
 	// Constructor
-	public Wehicle() {
-		this.id = nextID++;
+	public Wehicle(int id) {
+		this.id = id;
 		vehicleStatus = Status.UNKOWN;// Status is yet to be determined
 	}
 
@@ -54,5 +53,9 @@ public abstract class Wehicle implements Runnable{
 	
 	public Status getVehicleStatus() {
 		return vehicleStatus;
+	}
+	
+	public int getID() {
+		return id;
 	}
 }

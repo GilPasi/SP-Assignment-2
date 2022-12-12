@@ -5,19 +5,14 @@ public class MiniBus extends Wehicle {
 
 	WehicleWasher washer;
 
-	public MiniBus(WehicleWasher washer) {
-		super();
+	public MiniBus(WehicleWasher washer, int id) {
+		super(id);
 		this.washer = washer;
 	}
 
-	public void run() {
-		washer.arrival(this);
-		washer.startWash(this);
-		washer.doneWash(this);
-	}
-	
 	public String printStats() {
 		String out = super.getStats() + " Vehicle type: MiniBus";
+		System.out.println(out);
 		return out;
 	}
 }
