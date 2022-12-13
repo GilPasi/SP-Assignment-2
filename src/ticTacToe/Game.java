@@ -132,19 +132,24 @@ public abstract class Game {
 		if(checkIfWon(Players.X.sign)) {
 			System.out.println("\n========== X WON! CONGRATIONLATIONS! ============");
 			isGameOver = true;
+			isXTurn = !isXTurn; //Avoid changing turn in a case where the game is over
+
 		}
 		
-		if(checkIfWon(Players.O.sign)) {
+		else if(checkIfWon(Players.O.sign)) {
 			System.out.println("\n========== O WON! CONGRATIONLATIONS! ============");
-			isGameOver = true;			
+			isGameOver = true;
+			isXTurn = !isXTurn; //Avoid changing turn in a case where the game is over
+
 		}
 		
-		if(getFreeCells().length == 0) {
+		else if(getFreeCells().length == 0) {
 			System.out.println("\n========== A TIE! ============");
 			isGameOver = true;
+			isXTurn = !isXTurn; //Avoid changing turn in a case where the game is over
+
 
 		}
-
 
 		isXTurn = !isXTurn;
 		

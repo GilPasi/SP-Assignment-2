@@ -7,8 +7,8 @@ public class Runner {
 	public static void main (String [] args) {
 		
 		SelfPlayer sp1 = new SelfPlayer(Players.X, null);
-		UserPlayer sp2 = new UserPlayer(Players.O, null);
-		UserGame game = new UserGame(sp1,sp2);
+		SelfPlayer sp2 = new SelfPlayer(Players.O, null);
+		SelfGame game = new SelfGame(sp1,sp2);
 
 		
 		sp1.setGame(game);

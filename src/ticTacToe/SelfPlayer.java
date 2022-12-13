@@ -16,47 +16,26 @@ public class SelfPlayer extends Player implements Runnable{
 	@Override
 	public void run() {
 		
-		
-		while(!currentTurn()) {
+		while(!game.getIsGameOver()) {
+			
+			while(!currentTurn()) {
+				try {
+					Thread.sleep(SLEEP_TIME);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}		
+			}
+			
+			
 			try {
-				Thread.sleep(SLEEP_TIME);
-			} catch (InterruptedException e) {
+				((SelfGame)game).makeTurn();
+			} catch (Exception e) {
 				e.printStackTrace();
-			}		
-		}
-		
-		
-		try {
-			makeTurn();
-		} catch (Exception e) {
-			e.printStackTrace();
+			}
 		}
 	}
 	
 
-	public void makeTurn() {
-		
-		int [][] freeCells = game.getFreeCells();/*Certainly will not change, if CPU time is take
-												    the other player will not be able to play and
-												    change the free cells status.*/	
-		
-		
-		//Generate a random number between 0 and maxRand
-		int maxRand = freeCells.length;
-		
-		
-        Random rand = new Random();
-        int move = rand.nextInt(maxRand);
-        int moveRow = freeCells[move][0];
-        int moveColumn = freeCells [move][1];
-        
-        try {
-			game.makeMove(moveRow, moveColumn);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-        game.switchTurn();  
-        game.printBoard();
-	}
+
 
 }
