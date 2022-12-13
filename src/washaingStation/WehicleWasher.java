@@ -116,9 +116,7 @@ public class WehicleWasher {
 	
 	
 	public synchronized void getInLine(Wehicle w) {
-		
-//		System.out.println(w.id + " in getInLine");
-		
+				
 		if(preWash.size() == 0)
 			w.makeFirst();
 		
