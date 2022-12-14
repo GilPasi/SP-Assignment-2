@@ -11,7 +11,7 @@ public class SelfGame extends Game{
 		super(p1, p2);
 	}
 	
-	public synchronized void makeTurn() {
+	public synchronized void makeSelfTurn() {
 		
 		int [][] freeCells = getFreeCells();/*Certainly will not change, if CPU time is take
 												    the other player will not be able to play and

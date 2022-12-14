@@ -20,7 +20,7 @@ public class UserPlayer extends Player implements Runnable{
 	public void run() {
 		
 		while(!game.getIsGameOver()) 		
-			((UserGame)game).makeTurn(this);
+			((UserGame)game).makeUserTurn(this);
 		
 		
 	}

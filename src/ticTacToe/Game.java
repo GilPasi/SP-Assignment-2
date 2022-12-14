@@ -27,18 +27,18 @@ public abstract class Game {
 	
 	
 	public void startGame () {
-		System.out.println("Welcome to the amazing TIC - TAC - TOE !");
+		System.out.println("==========Welcome to the amazing TIC - TAC - TOE !===========");
 	}
 	
 	public void printBoard() {
 
-		
-		System.out.println("  " + gameBoard [0][0] + "  |  " + gameBoard[0][1] + "  |  " + gameBoard[0][2] );
-		System.out.println("_____|_____|_____");
-		System.out.println("  " + gameBoard [1][0] + "  |  " + gameBoard[1][1] + "  |  " + gameBoard[1][2] );
-		System.out.println("_____|_____|_____");
-		System.out.println("  " + gameBoard [2][0] + "  |  " + gameBoard[2][1] + "  |  " + gameBoard[2][2] );
-		System.out.println("     |     |     ");
+		System.out.println("\n\t[0]    [1]    [2]\n");
+		System.out.println("[0]\t  " + gameBoard [0][0] + "  |  " + gameBoard[0][1] + "  |  " + gameBoard[0][2] );
+		System.out.println("   \t_____|_____|_____");
+		System.out.println("[1]\t  " + gameBoard [1][0] + "  |  " + gameBoard[1][1] + "  |  " + gameBoard[1][2] );
+		System.out.println("   \t_____|_____|_____");
+		System.out.println("[2]\t  " + gameBoard [2][0] + "  |  " + gameBoard[2][1] + "  |  " + gameBoard[2][2] );
+		System.out.println("\t     |     |     ");
 	
 	}
 	
@@ -132,22 +132,18 @@ public abstract class Game {
 		if(checkIfWon(Players.X.sign)) {
 			System.out.println("\n========== X WON! CONGRATIONLATIONS! ============");
 			isGameOver = true;
-			isXTurn = !isXTurn; //Avoid changing turn in a case where the game is over
 
 		}
 		
 		else if(checkIfWon(Players.O.sign)) {
 			System.out.println("\n========== O WON! CONGRATIONLATIONS! ============");
 			isGameOver = true;
-			isXTurn = !isXTurn; //Avoid changing turn in a case where the game is over
 
 		}
 		
 		else if(getFreeCells().length == 0) {
 			System.out.println("\n========== A TIE! ============");
 			isGameOver = true;
-			isXTurn = !isXTurn; //Avoid changing turn in a case where the game is over
-
 
 		}
 

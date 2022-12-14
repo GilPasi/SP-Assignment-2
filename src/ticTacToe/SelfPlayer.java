@@ -23,19 +23,27 @@ public class SelfPlayer extends Player implements Runnable{
 					Thread.sleep(SLEEP_TIME);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
-				}		
+				}
+				
+				if(game.isGameOver)
+					return;
 			}
 			
 			
 			try {
-				((SelfGame)game).makeTurn();
+				
+				if(game instanceof SelfGame)
+					((SelfGame)game).makeSelfTurn();
+				
+				else if(game instanceof UserGame) 
+					((UserGame)game).makeSelfTurn();
+				
+				else
+					System.err.println("Game has no type");
+				
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
 	}
-	
-
-
-
 }
