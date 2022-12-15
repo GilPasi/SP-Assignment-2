@@ -5,14 +5,15 @@ public class Car extends Wehicle {
 
 	WehicleWasher washer;
 	
-	public Car(WehicleWasher washer, int id) {
-		super(id);
+	public Car(WehicleWasher washer) {
+		super();
 		this.washer = washer;
 	}
 	
 	public void run() {
 		washer.arrival(this);
 		washer.startWash(this);
+		washer.doneWash(this);
 	}
 	
 	public String printStats() {

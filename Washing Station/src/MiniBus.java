@@ -5,9 +5,15 @@ public class MiniBus extends Wehicle {
 
 	WehicleWasher washer;
 
-	public MiniBus(WehicleWasher washer, int id) {
-		super(id);
+	public MiniBus(WehicleWasher washer) {
+		super();
 		this.washer = washer;
+	}
+	
+	public void run() {
+		washer.arrival(this);
+		washer.startWash(this);
+		washer.doneWash(this);
 	}
 
 	public String printStats() {
